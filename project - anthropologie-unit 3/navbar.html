@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/74da05c696.js" crossorigin="anonymous"></script>
+    <style>
+
+        #nav1{
+            display: flex;
+            border: 1px solid red;
+            height: 50px;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #e5577c;
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        #nav2{
+            display: flex;
+            /* border: 1px solid blueviolet;  */
+            height: 50px;
+            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #f7f6f2;
+        }
+
+        #nav2>div{
+            margin-right: 20px;
+        }
+
+        #nav3{
+            /* border:1px solid rgb(183, 21, 21); */
+            display: flex; 
+            height: 60px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #nav3>div{
+            /* border:1px solid teal; */
+            display: flex; 
+            height: 60px;
+            margin: 30px;
+            align-items: center;
+        }
+
+        #nav3>div>div{
+            align-items: center;
+        }
+
+        #nav4{
+            border:1px solid black;
+            display: flex; 
+            height: 60px;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            font-family: "Avenir Book",sans-serif;
+            font-size: 14px;
+        }
+
+        #nav5{
+            /* border:1px solid red; */
+            display: flex; 
+            height: 140px;
+            width: 90%;
+            margin: auto;
+            /* justify-content: space-around; */
+        }
+
+        #nav5>div{
+            width: 48%;
+            height: 80px;
+            align-items: center;
+            margin: auto;
+        }
+
+        #nav5>div>img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .example>input{
+            height: 40px;
+        }
+        .example>button{
+            height: 45px;
+            margin: -5px;
+            background-color: #167a92;
+            border: none;
+            width: 45px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        #cart>button{
+            margin: 15px;
+            background: white;
+            height: 40px;
+            width: 40px;
+            border: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="navbar">
+        <div id="nav1">
+            <p>this weekend only</p> 
+            <p>EXTRA 40% OFF ALL SALE ITEMS!</p>
+            <a href="#">shop</a>
+            <a href="#">all sales final – see details</a>
+        </div>
+        <div id="nav2">
+            <div><span><i class="fa-thin fa-circle-microphone"></i></span><p>English</p></div>
+            <div><span><i class="fa-light fa-user"></i></span> <p>Sign In</p></div>
+        </div>
+        <div id="nav3">
+            <div id="page">
+                <div>ANTHROPOGIE</div>
+                <div>anthro living home</div>
+            </div>
+            <div id="search-cart">
+                <div>
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="search ANTHROPOGIE" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                      </form>
+                </div>
+                <div id="cart">
+                    <button><i class="fal fa-shopping-bag"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="nav4">
+            <div>New!</div>
+            <div>Dresses</div>
+            <div>Clothing</div>
+            <div>Shoes</div>
+            <div>Accessories</div>
+            <div>Gifts & Candles</div>
+            <div>Home & Furniture</div>
+            <div>Beauty & Wellness</div>
+            <div>Garden & Outdoor</div>
+            <div>Wedding</div>
+            <div>Sale</div>
+        </div>
+        <div id="nav5">
+            <div><img src="https://images.ctfassets.net/5de70he6op10/6jLjT1AyPznRcro3PG6wcj/fb1b201470d651e05c895313ffabdbec/061722_40offSOS_HPG_BBB_LS.jpg?w=1302&q=80&fm=webp" alt="nav5-img1"></div>
+            <div><img src="https://images.ctfassets.net/5de70he6op10/6vLnpJH9VTKImoPrvc41rm/3eea1c0dc91b3ba7e294667779b7037f/061722_DressFlashSale_HPG_Banner_1.jpg?w=1302&q=80&fm=webp" alt="nav5-img2"></div>
+        </div>
+    </div>
+</body>
+</html>
