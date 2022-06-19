@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #img-div1{
+        display: flex;
+        /* justify-content: space-around; */
+       } 
+       .img-div1-1>img{
+        width: 850px;
+        height: 500px;
+        position: relative;
+       }
+
+       .img-div1-2>img{
+        width: 350px;
+        height: 500px;
+       }
+
+       #img-div2{
+        display: flex;
+        margin: 5px;
+       }
+
+       #img-div2-1>img{
+        width: 420px;
+        height: 500px;
+       }
+
+       #img-div2-2>img{
+        width: 420px;
+        height: 500px;
+       }
+
+       #img-div2-3-1>img{
+        width: 350px;
+        height: 230px;
+       }
+
+       #img-div2-3-2>img{
+        width: 350px;
+        height: 230px;
+       }
+
+       #img-div3{
+        display: flex;
+       }
+
+       #img-div4{
+        display: flex;
+       }
+
+       #img-div4>div>img{
+        width: 600px;
+        height: 500px;
+       }
+
+       #front-Button{
+        position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    margin-top: -290px;
+    width: 150px;
+    height: 50px;
+    border: None;
+    outline: none;
+    background: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+       }
+
+       img{
+       /* position: relative; */
+        margin: 5px;
+       }
+    </style>
+</head>
+<body>
+    <div id="img-div1">
+        <div class="img-div1-1"><img src="https://images.ctfassets.net/5de70he6op10/vU02u4Ed7W7ZkS5Xs4A9F/8bb4ad56dbd9d0cd603893fd9084015b/M1.jpg?w=1756&q=80&fm=webp" alt="1"> <span><button id="front-Button">See what's new</button></span></div>
+        <div class="img-div1-2"><img src="https://images.ctfassets.net/5de70he6op10/1TgGoVz8r3iv7bXrpqI7O0/0b8d4b9250154b23aefbd2c9161569ee/RR_Bedding.jpg?w=856&q=80&fm=webp" alt="2"></div>
+    </div>
+    <div id="img-div2">
+        <div id="img-div2-1"><img src="https://images.ctfassets.net/5de70he6op10/5KFDrC8FPVViNsVHIErMLE/7536376a0f27b7e56b0a784116135db2/2UP_Getaway.jpg?w=856&q=80&fm=webp" alt="3"></div>
+        <div id="img-div2-2"><img src="https://images.ctfassets.net/5de70he6op10/qY2whtEWgL8dFhYWmuKPw/5698b6b316d710db348adbe5878d1881/061322_HPG_2x_2UP_Skirts.jpg?w=856&q=80&fm=webp" alt="4"></div>
+        <div>
+            <div id="img-div2-3-1"><img src="https://images.ctfassets.net/5de70he6op10/76eitp95fX5FEYaQiOJEVR/aaa9965b4a935ad3a91579e804fd1d95/061322_HPG_2x_RR_BHLDN.jpg?w=856&q=80&fm=webp" alt="5"></div>
+            <div id="img-div2-3-2"><img src="https://images.ctfassets.net/5de70he6op10/3CcyBHXdzVReJZnayEfkjE/673d50eb9fdb43b9ee4b8e8d3f9bd184/061322_HPG_2x_RR_Decor.jpg?w=856&q=80&fm=webp" alt="6"></div>
+        </div>
+    </div>
+    <div id="img-div3">
+        <div class="img-div1-1"><img src="https://images.ctfassets.net/5de70he6op10/2QGun4PWRx9cuojWlBQtnW/ce87d8a7fe49937b947fb66185e94dd5/3rd-Row-Home_-Shop-the-Assortment-_-Explore-the-LP.jpg?w=1756&q=80&fm=webp" alt="1"></div>
+        <div class="img-div1-2"><img src="https://images.ctfassets.net/5de70he6op10/gPQzhMAOKH8pM6fQu28K3/dc20aefe7f92cc782503710971596457/061322_HPG_2x_RR_Sandals.jpg?w=856&q=80&fm=webp" alt="2"></div>
+    </div>
+    <div id="img-div4">
+        <div><img src="https://images.ctfassets.net/5de70he6op10/5sDk11qKleSdvIOvZc35OD/3eee309aaddeabaa38696b5c92e526a2/4th-Row-2UP_Shop-All.jpg?w=1301&q=80&fm=webp" alt=""></div>
+        <div><img src="https://images.ctfassets.net/5de70he6op10/6zS5hd8iXJvVo6XdWajuVz/e1938a3f0f4a368c3a42cefe3ae7f37b/4th-Row-2UP_New-Apparel-_-Accessories.jpg?w=1301&q=80&fm=webp" alt=""></div>
+    </div>
+</body>
+</html>

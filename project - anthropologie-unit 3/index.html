@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* .grid-container {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 10px;
+  background-color: teal;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.grid-container>div>img{
+    height: 100%;
+    width: 100%;
+} */
+
+#container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(8,1fr);
+            gap: 20px;
+            height: 350px;
+            width: 550px;
+            margin: auto;
+            padding-top: 50px;
+            grid-template-areas: 
+            "a a e"
+            "a a e"
+            "a a f"
+            "b c f"
+            "b c g"
+            "d d g"
+            "d d h"
+            "d d h";
+        }
+
+        #container>div {
+            background-color: teal;
+            border-radius: 5px solid green;
+        }
+
+        #container > div:nth-child(1) {
+        grid-area: a;
+      }
+
+      #container > div:nth-child(2) {
+        grid-area: b;
+      }
+
+      #container > div:nth-child(3) {
+        grid-area: c;
+      }
+
+      #container > div:nth-child(4) {
+        grid-area: d;
+      }
+      #container > div:nth-child(5) {
+        grid-area: e;
+      }
+      #container > div:nth-child(6) {
+        grid-area: f;
+      }
+
+      #container > div:nth-child(7) {
+        grid-area: g;
+      }
+
+      #container > div:nth-child(8) {
+        grid-area: h;
+      }
+
+      /* #container>div>img{
+    height: 200px;
+    width: 100%;
+}  */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"><img src="https://images.ctfassets.net/5de70he6op10/vU02u4Ed7W7ZkS5Xs4A9F/8bb4ad56dbd9d0cd603893fd9084015b/M1.jpg?w=1756&q=80&fm=webp" alt="1"></div>
+        <div class="item2"><img src="https://images.ctfassets.net/5de70he6op10/1TgGoVz8r3iv7bXrpqI7O0/0b8d4b9250154b23aefbd2c9161569ee/RR_Bedding.jpg?w=856&q=80&fm=webp" alt="2"></div>
+        <div class="item3"><img src="https://images.ctfassets.net/5de70he6op10/gPQzhMAOKH8pM6fQu28K3/dc20aefe7f92cc782503710971596457/061322_HPG_2x_RR_Sandals.jpg?w=856&q=80&fm=webp" alt="3"></div>  
+        <div class="item4"><img src="https://images.ctfassets.net/5de70he6op10/20iWBHgTWyA4wFUWPuuca/f2103f120cc72a95049322392429dcb9/061322_HPG_2x_2UP_Dresses.jpg?w=856&q=80&fm=webp" alt="4"></div>
+        <div class="item5"><img src="https://images.ctfassets.net/5de70he6op10/qY2whtEWgL8dFhYWmuKPw/5698b6b316d710db348adbe5878d1881/061322_HPG_2x_2UP_Skirts.jpg?w=856&q=80&fm=webp" alt="5"></div>
+        <div class="item6"><img src="https://images.ctfassets.net/5de70he6op10/vNy6x3k0aKYsy4AuErZOp/15cb8a7cc642f6530af5dfdcc54a39f0/RR_Tops.jpg?w=856&q=80&fm=webp" alt="6"></div>
+        <div class="item7"><img src="https://images.ctfassets.net/5de70he6op10/2QGun4PWRx9cuojWlBQtnW/ce87d8a7fe49937b947fb66185e94dd5/3rd-Row-Home_-Shop-the-Assortment-_-Explore-the-LP.jpg?w=1756&q=80&fm=webp" alt="6"></div>
+        <div class="item8"><img src="https://images.ctfassets.net/5de70he6op10/52bbfxp2kzymVZ339bWds3/1a5c7775867ab88333cda43eba693c7c/061322_HPG_2x_RR_Kitchen_Dining.jpg?w=856&q=80&fm=webp" alt="7"></div> 
+        <div class="item9"><img src="https://images.ctfassets.net/5de70he6op10/52bbfxp2kzymVZ339bWds3/1a5c7775867ab88333cda43eba693c7c/061322_HPG_2x_RR_Kitchen_Dining.jpg?w=856&q=80&fm=webp" alt="8"></div>
+        <div class="item10"><img src="https://images.ctfassets.net/5de70he6op10/6zS5hd8iXJvVo6XdWajuVz/e1938a3f0f4a368c3a42cefe3ae7f37b/4th-Row-2UP_New-Apparel-_-Accessories.jpg?w=1301&q=80&fm=webp" alt="9"></div>  
+      </div>
+</body>
+</html>
+
+<script>
+    //let images = JSON.parse(localStorage.getItem('images'));
+let i = 0;
+let id;
+function start(){
+let images = ['https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60','https://images.unsplash.com/photo-1655242151421-f39ce463a7e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60','https://www.google.com/search?rlz=1C1CHBF_en-gbIN956IN956&sxsrf=ALiCzsbNFD3g8L6komxJN79Ng-kEbAH2Sg:1655306121882&q=Moonfall&stick=H4sIAAAAAAAAAE2SP2zTQBTG41SNTACpboSoOqGyVFlin-OzjyWVQGwVAjF0wmrs2I59d87Zp_MfFsTIyMCMmBgYgAkxUNQNBpAYOiIEEywdqRBSCUI-Y0-_u-997-m-p65unR-FI8MgwrUgqAXokVTMZ_l75d85q73FNApYw9G48mhgxg0HBUqor9cN55HBMz0UUg9CoAcObTg2pgtUt_qmb8M4giENOJT-fAxtQi1ZP85t245kfYQACqbQkP2pGdY6dxumjsl8ZlTSj7g8Z9xueGoJFJbjRcMJdzGsUSL1sQkQmiLZ34GuUXl2yzyGwAmlnrHAK8hY3hPmurDO2_7UzIQnmWKLYAalHzVgYsDYbfU5962xnD8ngoWMcelvxpaFirLNw556vG7nscPQTWynzQcEy1_6L3yd6L4j3w8nmV9Ensw7joRtIUvqfb_E3GYtV7QokQOk3sZgOYHMO_JinQhb-kcOtr2olvOHoUV1rzDbe8cpRSL1jEBRl1W7D9DUhYvlvsSgxomVRXKf0MJAdSb3M8tDUInyv7zMOodVIZkudFSVMn-asdrhTG_fX6CctvWBx9micKyvyqFydu37yefB5ivl4bN3R8oLpX9md0amsyy_Eaxf7vevphjPPD5P6fqFzUFfG3nyYBTMMcm37oI7rz89-tDb0zrLLzq4ubNpaO7LkweV9m0y1Pq9aynZn1Nt7_fp5Oj0eDIc9NXb-2VKU1JpH6-v3Pvx83iytfG3-vHKxeHOxsqlznbHWOKXnvvrYNi5pY7ISAeipG-V7v03Tw97qqqsdUBX7VzpbnfPPVlVd9OUBvsYP1_t_gEvioalDQQAAA&sa=X&ved=2ahUKEwjVmI7r36_4AhV3RmwGHT2OApIQ8sMGegUICxCPAQ','https://www.google.com/search?rlz=1C1CHBF_en-gbIN956IN956&sxsrf=ALiCzsbNFD3g8L6komxJN79Ng-kEbAH2Sg:1655306121882&q=Don&stick=H4sIAAAAAAAAAFWSP2zTQBTG40SNQgCpaYWoOqGyVFlin-OzjyWVqNgQAjF0wqrt2I7tO_vsk_-xIEZGBmbExMAATIiBom4wgMTQESGYYOlIhZBKGPwM9vS7-973nu57g5Wt8xNvoii8thPLdznq0zhfzLP30v_nDfvTymauGjTsFiRkjlw3nPmKSGUvBz3ykOwarOFAsRJSt3qamxpGNegjH3vMFRj8xRTrlGlQP810Xfeh3ieIuBZWoD9TvVoWZsPMULnDlQr8qCkyLvSGLS0nXjlNGg6FGeGahKAPVESIRaC_gU2lsvWWRYCR4YGec9cu6BTuKTdNXGdtf6amuQ3MIo1GHIMfU3Co4MBs9ZlwtCnMn9Gce5wL8FcDTSNF2eahW7ao23l0zzND3WjzQe7yB__EkansGPB-UZg6hW9D3oGf6xrRQO84ZSR03nLFipIYCPR6hJYTQN6-Hcg018HfNyLd9muY3_M0JtuF2t4bRpmHoOcU53VZtfuAVTk3I9iXANVRqKU-7BNJFFKnsJ9p5qEqL__JS60zXBXALJFJVUL-LOW1Ibjcvn9OMtbWu7bgSWFoX6VD6ezq95PP65uvpIfP3h1JL6Thmetzas3T7Ia7dnk4vBpH0dwWi5itXdhcH44mNhxM3EVEs6276M7rT48-9PdGneXnH9zc2VRG5suTB9Xo22w8GvZ3Y7q_YKO936ezo9Pj2Xh9OLi9X8YsptXo47XevR8_j2dbG3-rH_cujnc2epc62x1liV_65q-DcefWYEInMspL9lbq3n_z9LA_GEirHdQddK50t7vnnqz0dmP2fKX7B40zbtkIBAAA&sa=X&ved=2ahUKEwjVmI7r36_4AhV3RmwGHT2OApIQ8sMGegQICxAI']
+
+let slideshow = document.getElementById('slideshow');
+
+
+//var arr = ['1.png','2.png','3.png']
+
+// i=i+1  //incrementing so we don't have to see image[0] again
+
+setInterval(function() {
+//Acessing image url
+    if(i===images.length) {
+        i=0;
+    }
+
+    slideshow.innerHTML = null;
+    let image = images[i];  //images[1]..[2]
+    console.log('i:', i);
+
+    //append the image 
+    let img = document.createElement('img')
+
+    img.src = image;
+
+    slideshow.append(img);
+
+    i++;
+},3000);
+}
+</script>
